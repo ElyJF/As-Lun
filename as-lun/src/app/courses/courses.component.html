@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Título de tu página</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      margin-top: 200px;
+      margin-bottom: 5%;
+      z-index: 2;
+      position: relative;
+    }
+    h2 {
+      color: hsl(325, 76%, 40%);
+    }
+    h3 {
+      color: hsl(325, 76%, 40%);
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 4%);
+      box-shadow: 0 0 10px rgba(109, 107, 107, 0.2);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card-img-container {
+      height: 300px;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .title-section {
+      margin-bottom: 30px;
+    }
+    #footer {
+      margin-top: 50px;
+      background-color: hsl(0, 0%, 90%);
+      padding: 20px;
+    }
+    .dancing-font{font-family: 'Dancing Script', cursive;}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="mb-4">
+    <div class="container">
+      <div class="title-section"><h1 class="dancing-font">Cursos</h1></div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="../../assets/WhatsApp Image 2023-06-08 at 8.11.07 AM.jpeg" alt="Imagen de ejemplo">
+            </div>
+            <div class="card-body">
+              <h3 class="dancing-font">Manicuría profesional</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="../../assets/WhatsApp Image 2023-06-08 at 8.09.49 AM.jpeg" alt="Imagen de ejemplo">
+            </div>
+            <div class="card-body">
+              <h3 class="dancing-font">Makeup art y profesional</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="../../assets/WhatsApp Image 2023-06-08 at 8.11.06 AM.jpeg" alt="Imagen de ejemplo">
+            </div>
+            <div class="card-body">
+              <h3 class="dancing-font">Técnico en cejas y extensión de pestañas</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="dancing-font">Muchos más!</h1>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <h1></h1>
+  
+  
+  <div class="contact-section">
+    <app-contact></app-contact>
+  </div>
+  
+</body>
+</html>

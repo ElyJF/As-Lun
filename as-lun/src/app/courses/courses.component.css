@@ -1,0 +1,41 @@
+.container {
+    margin-top: 200px;
+    margin-bottom: 5%;
+    z-index: 2;
+    position: relative;
+  }
+  h1{
+    color: hwb(300 11% 33%);
+  }
+  
+  h2 {
+    color: hwb(300 11% 33%);
+  }
+  
+  h3 {
+    color: hwb(300 11% 33%);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 4%);
+    box-shadow: 0 0 10px hsla(0, 2%, 53%, 0.2);
+    transition: transform 0.10s;
+  }
+  
+  .card:hover {
+    transform: translateY(-100px);
+  }
+  .contact-section {
+    margin-top: 300px;
+    text-align: center;
+  }
+  :host {
+    display: block; /* Asegura que el estilo se aplique al componente en su totalidad */
+  }
+  
+  .mb-4 {
+    margin-bottom: 100rem; /* Aplica el margen inferior deseado */
+  }
+  

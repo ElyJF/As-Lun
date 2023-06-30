@@ -1,0 +1,283 @@
+@keyframes rightwingani {
+  from {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  30% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 100deg);
+  }
+  70% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+
+@keyframes leftwingani {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  30% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 80deg);
+  }
+  70% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+
+.butterfly-large {
+  width: 346px; /* 178px * 2 - 10px */
+  height: 208px;
+  position: absolute;
+  right: 30px;
+  transform: rotate(20deg) translate(30px, 60px) scale(0.8);
+  transform-origin: center center;
+}
+
+.butterfly-large:before,
+.butterfly-large:after {
+  position: absolute;
+  width: 178px;
+  height: 208px;
+  content: "";
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing.png');
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.butterfly-large:before {
+  transform: rotate3d(0, 0, 0, 180deg);
+  transform-origin: center right;
+  animation-name: rightwingani;
+}
+
+.butterfly-large:after {
+  transform-origin: top right;
+  animation-name: leftwingani;
+}
+
+
+.butterfly-small {
+  width: 140px; /* 75px * 2 - 10px */
+  height: 87px;
+  transform: rotate(-20deg) translate(30px, 60px) scale(0.8);
+  transform-origin: center center;
+  position: absolute;
+}
+
+.butterfly-small:before,
+.butterfly-small:after {
+  position: absolute;
+  width: 75px;
+  height: 87px;
+  content: "";
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/5536/wing-small.png');
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.butterfly-small:before {
+  transform: rotate3d(0, 0, 0, 180deg);
+  transform-origin: center right;
+  animation-name: rightwingani;
+}
+
+.butterfly-small:after {
+  transform-origin: top right;
+  animation-name: leftwingani;
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-right: 300px;
+  }
+  
+  
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: hwb(313 9% 40%);
+      text-shadow: 2px 2px 4px hwb(294 89% 3% / 0.502);
+      transform: perspective(500px) rotateX(20deg);
+    }
+  
+  h2{
+    font-size: 35px;
+    color: hwb(313 9% 40%);
+  }
+  
+  
+  h3{
+    font-size: 30px;
+    color: hwb(313 9% 40%);
+  }
+  
+  .services {
+    
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .services h2 {
+    font-size: 35px;
+    color: hwb(313 9% 40%);
+  }
+  
+  .services ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: hwb(313 9% 40%);
+    font-size: 23px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Añadido */
+  }
+  .contact-info h2 {
+    font-size: 30px;
+    color: hwb(313 9% 40%);
+  }
+  
+  .contact-info a {
+    font-size: 25px;
+    color: hwb(313 9% 40%);
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: hwb(0 93% 5%);
+  }
+ 
+  /* home.component.css */
+
+html, body {
+  height: 0%;
+  margin: 0;
+  padding: 0;
+}
+.dancing-script-font {
+  font-family: 'Dancing Script', cursive;
+}
+.contact-form {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: hwb(313 9% 40%);
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 30%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: hwb(306 79% 4%);
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form button[type="submit"] {
+  background-color: hwb(306 79% 4%);
+  width: 140px;
+  height: 50px;
+  color: hwb(313 9% 40%);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #333;
+  width: 20px;
+}
+.video-container {
+  position: relative; /* Agregado */
+  width: 640px; /* Agregado */
+  height: 0; /* Agregado */
+  padding-bottom: 56.25%; /* Calculado para mantener una relación de aspecto 16:9 (9 dividido por 16 = 0.5625 o 56.25%) */
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.video-container iframe {
+  position: absolute; /* Agregado */
+  top: 0; /* Agregado */
+  left: 0; /* Agregado */
+
+  width: 100%; /* Agregado */
+  height: 100%; /* Agregado */
+}
+
+  
+
+ 
+  
+    
+  .rounded-button {
+    border-radius: 50px;
+    background-color: hwb(306 79% 4%);
+    color: hwb(313 9% 40%);
+  }
+
+.video-frame {
+  max-width: 640px;
+  max-height: 352px;
+}
+
+.text {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.video-container h2,
+.video-container p {
+  color: hwb(313 9% 40%);
+}
+.logo {
+  max-width: 100px; /* Ajusta el tamaño máximo del logotipo según tus necesidades */
+  height: auto; /* Asegura que la altura se ajuste proporcionalmente */
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  right: 1120px; /* Ajusta la distancia desde la derecha */
+}
+
+
+
+
+
+
+
+
+
+
+  
