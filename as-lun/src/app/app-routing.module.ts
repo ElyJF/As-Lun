@@ -3,8 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './courses/courses.component';
 import { WorksComponent } from './works/works.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+
+
 
 
 const routes: Routes = [
@@ -12,8 +14,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'works', component: WorksComponent },
   {path: 'courses', component: CoursesComponent},
-  { path: 'footer', component: FooterComponent },
   {path: 'contact', component: ContactComponent},
+  { path: 'footer', component: FooterComponent },
+
  
   // Otras rutas si las tienes
 ];

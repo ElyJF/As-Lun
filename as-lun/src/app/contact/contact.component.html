@@ -1,48 +1,25 @@
-<label class="btn-open btn-open-primary" for="frmContactForm">
-  <i class="far fa-envelope"></i>
-  <span class="ml-half">Contáctame</span>
-</label>
 
-<input type="checkbox" id="frmContactForm">
-<div class="contact-modal">
-  <div class="contact-form mt-4">
-    <form>
-      <div class="contact-wrapper">
-        <div class="contact-section">
-          <h2 class="p-none m-none mb-quarter text-white">
-            <i class="far fa-envelope"></i>
-            <span class="ml-half">Contáctame</span>
-          </h2>
+<div class="container">
+  <div class="form-container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form (submit)="submitForm()">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" [(ngModel)]="contactData.name" required>
         </div>
-        <div class="contact-section">
-          <div class="form-item">
-            <input id="txtFullName" type="text" placeholder="Full Name (Optional)">
-            <label class="lbl-floating" for="txtFullName">Nombre (Opcional)</label>
-            <i class="icon text-white fas fa-user"></i>
-          </div>
-          <div class="form-item">
-            <input id="txtEmail" type="email" placeholder="E-Mail Address">
-            <label class="lbl-floating" for="txtEmail">E-Mail</label>
-            <i class="icon text-white fas fa-at"></i>
-          </div>
-          <div class="form-item">
-            <textarea id="txtContent" placeholder="Your message to the developer" rows="5"></textarea>
-            <label class="lbl-floating" for="txtContent">Tu mensaje o consulta</label>
-            <i class="icon text-white far fa-comment"></i>
-          </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" [(ngModel)]="contactData.email" required>
         </div>
-        <div class="contact-section text-right">
-          <label for="frmContactForm" class="contact-cancel">
-            <i class="fas fa-times-circle"></i>
-            <span class="ml-quarter">Cancelar😞</span>
-          </label>
-          <button type="button" class="btn-open btn-open-secondary">
-            <i class="far fa-paper-plane"></i>
-            <span class="ml-half">Enviar😊</span>
-          </button>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" [(ngModel)]="contactData.message" required></textarea>
         </div>
-      </div>
-    </form>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </div>
 </div>
 
+</div>

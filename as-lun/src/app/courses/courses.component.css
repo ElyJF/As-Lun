@@ -27,10 +27,7 @@
   .card:hover {
     transform: translateY(-100px);
   }
-  .contact-section {
-    margin-top: 300px;
-    text-align: center;
-  }
+  
   :host {
     display: block; /* Asegura que el estilo se aplique al componente en su totalidad */
   }

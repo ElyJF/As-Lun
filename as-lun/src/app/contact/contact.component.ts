@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  contactData = {
+    name: '',
+    email: '',
+    message: ''
+};
 
+submitForm() {
+  // Puedes redirigir a una página específica o enviar un mensaje de WhatsApp aquí
+  // Por ejemplo, para redirigir a una página:
+  // window.location.href = 'https://www.example.com/contact-success';
+
+  // O para enviar un mensaje de WhatsApp:
+  const whatsappURL = 'https://api.whatsapp.com/send?phone=123456789&text=' + encodeURIComponent(this.contactData.message);
+  window.open(whatsappURL, '_blank');
+}
 }
