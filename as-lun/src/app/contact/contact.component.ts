@@ -18,7 +18,7 @@ submitForm() {
   // window.location.href = 'https://www.example.com/contact-success';
 
   // O para enviar un mensaje de WhatsApp:
-  const whatsappURL = 'https://api.whatsapp.com/send?phone=123456789&text=' + encodeURIComponent(this.contactData.message);
+  const whatsappURL = 'https://wa.me/543516183289?text=' + encodeURIComponent(this.contactData.message);
   window.open(whatsappURL, '_blank');
 }
 }

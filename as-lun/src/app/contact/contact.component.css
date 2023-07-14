@@ -1,15 +1,25 @@
 .container {
-  position: relative;
-  margin: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 100rem;
 }
 
 .form-container {
-  margin-bottom: 100rem; /* Agrega margen inferior para separar del siguiente componente */
+  margin-bottom: 20rem; /* Agrega margen inferior para separar del siguiente componente */
   height: 50vh;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px;
+  padding: 20px;
+  
 }
 
 .form-group {
   margin-bottom: 1rem;
+  
 }
 
 label {
@@ -20,20 +30,49 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid hwb(310 39% 3%);
   border-radius: 4px;
+ 
+  box-shadow: 0 0 15px hwb(310 39% 3%);
 }
 
 button {
   padding: 0.5rem 1rem;
-  background-color: #f44336;
-  color: white;
+  background-color: #801368;
+  color: #fc9ee0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0 0 15px hwb(310 39% 3%);
+}
+h3, h4 {
+  color: #cc1ea6;
+ 
+}
+.follow-link {
+  color: rgb(247, 115, 214);
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
+.follow-link:hover {
+  background-image: linear-gradient(
+    to right, 
+    #E7484F,
+    #F68B1D, 
+    #FCED00,
+    #009E4F,
+    #00AAC3,
+    #732982
+  );
+  animation: slidebg 2s linear infinite;
+}
 
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
