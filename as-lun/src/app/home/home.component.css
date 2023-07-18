@@ -113,20 +113,20 @@
       font-family: 'Dancing Script', cursive;
       font-size: 40px;
       text-transform: uppercase;
-      color: hwb(313 9% 40%);
+      color: hwb(300 11% 33%);
       text-shadow: 2px 2px 4px hwb(294 89% 3% / 0.502);
       transform: perspective(500px) rotateX(20deg);
     }
   
   h2{
     font-size: 35px;
-    color: hwb(313 9% 40%);
+    color: hwb(300 11% 33%);
   }
   
   
   h3{
     font-size: 30px;
-    color: hwb(313 9% 40%);
+    color: hwb(300 11% 33%);
   }
   
   .services {
@@ -137,14 +137,14 @@
   
   .services h2 {
     font-size: 35px;
-    color: hwb(313 9% 40%);
+    color: hwb(300 11% 33%);
   }
   
   .services ul {
     list-style-type: disc;
     margin-left: 20px;
-    color: hwb(313 9% 40%);
-    font-size: 23px;
+    color: hwb(300 11% 33%);
+    font-size: 28px;
   }
   
   .contact-info {
@@ -154,12 +154,12 @@
   }
   .contact-info h2 {
     font-size: 30px;
-    color: hwb(313 9% 40%);
+    color: hwb(300 11% 33%);
   }
   
   .contact-info a {
     font-size: 25px;
-    color: hwb(313 9% 40%);
+    color: hwb(300 11% 33%);
   }
   
   .contact-info p {
@@ -177,73 +177,33 @@ html, body {
 .dancing-script-font {
   font-family: 'Dancing Script', cursive;
 }
-.contact-form {
-  margin-top: 20px;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 10px;
-  color: hwb(313 9% 40%);
-}
-
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 30%;
-  padding: 5px;
-  margin-bottom: 10px;
-  background-color: hwb(306 79% 4%);
-  border-radius: 10px;
-}
 
 .button-container {
   display: flex;
   justify-content: center;
 }
-
-.contact-form button[type="submit"] {
-  background-color: hwb(306 79% 4%);
-  width: 140px;
-  height: 50px;
-  color: hwb(313 9% 40%);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-}
-
-.contact-form button[type="submit"]:hover {
-  background-color: #333;
-  width: 20px;
-}
 .video-container {
-  position: relative; /* Agregado */
-  width: 640px; /* Agregado */
-  height: 0; /* Agregado */
+  position: relative; 
+  width: 640px; 
+  height: 0; 
   padding-bottom: 56.25%; /* Calculado para mantener una relación de aspecto 16:9 (9 dividido por 16 = 0.5625 o 56.25%) */
   overflow: hidden;
   border-radius: 60px;
 }
 
 .video-container iframe {
-  position: absolute; /* Agregado */
-  top: 0; /* Agregado */
-  left: 0; /* Agregado */
+  position: absolute; 
+  top: 0; 
+  left: 0;
 
-  width: 100%; /* Agregado */
-  height: 100%; /* Agregado */
+  width: 100%; 
+  height: 100%; 
 }
 
-  
-
- 
-  
-    
-  .rounded-button {
+.text-center {
+  text-align: center;
+}
+.rounded-button {
     border-radius: 50px;
     background-color: hwb(306 79% 4%);
     color: hwb(313 9% 40%);
@@ -269,6 +229,10 @@ html, body {
   position: absolute;
   top: 10px; /* Ajusta la distancia desde la parte superior */
   right: 1120px; /* Ajusta la distancia desde la derecha */
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px hsl(313, 93%, 22%);
+  transform: perspective(500px) rotateY(10deg);
 }
 
 
