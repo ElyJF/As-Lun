@@ -1,6 +1,7 @@
 # As-Lun #
 ## Under construction
-<img src="https://github.com/ElyJF/As-Lun/edit/main/README.md" alt="Imagen 1" />
-<img src="https://github.com/ElyJF/As-Lun/blob/main/img/2.png" alt="Imagen 2" />
-<img src="../As-Lun(proyecto)/img/3.png" alt="Imagen 3" />
-<img src="../As-Lun(proyecto)/img/4.png" alt="Imagen 4" />
+![Imagen 1](ruta/a/imagen1.png)
+![Imagen 2](https://github.com/ElyJF/As-Lun/blob/main/img/2.png)
+![Imagen 3](ruta/a/imagen3.png)
+![Imagen 4](ruta/a/imagen4.png)
+
