@@ -1,5 +1,5 @@
 [build]
-  publish = "dist"
+  publish = "dist/as-lun"
   command = "ng build --configuration=production"
   
 [[redirects]]
