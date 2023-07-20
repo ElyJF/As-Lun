@@ -235,7 +235,34 @@ html, body {
   transform: perspective(500px) rotateY(10deg);
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+  }
 
+  .butterfly-large {
+    display: none;
+  }
+
+  .butterfly-small {
+    width: 140px; /* Ajustar el tamaño */
+    height: 87px; /* Ajustar el tamaño */
+    transform: rotate(-20deg) translate(30px, 60px) scale(0.8);
+    transform-origin: center center;
+    position: absolute;
+    right: 10px; /* Ajustar la posición */
+    top: 10px; /* Ajustar la posición */
+  }
+
+  .logo {
+    max-width: 100px; /* Ajustar el tamaño */
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
 
 
 
